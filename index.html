@@ -79,22 +79,9 @@ img{width:100%;border-radius:10px}
 
 <section id="gallery" class="section">
 <h2>ہمارا کام</h2>
-<div class="gallery">
+<div class="gallery" id="gallery-container">
 
-<div class="card"><img src="wa111.jpg"></div>
-<div class="card"><img src="wa112.jpg"></div>
-<div class="card"><img src="wa113.jpg"></div>
-<div class="card"><img src="wa114.jpg"></div>
-<div class="card"><img src="wa115.jpg"></div>
-<div class="card"><img src="wa116.jpg"></div>
-<div class="card"><img src="wa117.jpg"></div>
-<div class="card"><img src="wa118.jpg"></div>
-<div class="card"><img src="wa119.jpg"></div>
-<div class="card"><img src="wa120.jpg"></div>
-<div class="card"><img src="wa121.jpg"></div>
-<div class="card"><img src="wa122.jpg"></div>
-<div class="card"><img src="wa123.jpg"></div>
-<div class="card"><img src="wa124.jpg"></div>
+
 
 </div>
 </section>
@@ -123,6 +110,21 @@ width="90%" height="300" style="border:0;border-radius:10px;"></iframe>
 <footer>
 © 2026 DANI FLEX WALLPAPER
 </footer>
+<script>
+const gallery = document.getElementById("gallery-container");
 
+let images = [
+"wa111.jpg","wa112.jpg","wa113.jpg","wa114.jpg","wa115.jpg",
+"wa116.jpg","wa117.jpg","wa118.jpg","wa119.jpg","wa120.jpg",
+"wa121.jpg","wa122.jpg","wa123.jpg","wa124.jpg","wa125.jpg",
+"wa126.jpg","wa127.jpg","wa128.jpg","wa129.jpg","wa130.jpg"
+];
+
+images.forEach(img=>{
+  gallery.innerHTML += `<div class="card">
+  <img src="images/${img}" loading="lazy">
+  </div>`;
+});
+</script>
 </body>
 </html>
