@@ -42,7 +42,7 @@ input,textarea{width:90%;padding:12px;margin:8px;border-radius:6px;border:1px so
 footer{background:#072c6a;color:white;text-align:center;padding:15px}
 img{width:100%;border-radius:10px}
 </style>
-}
+
 </head>
 
 <body>
@@ -124,21 +124,3 @@ width="90%" height="300" style="border:0;border-radius:10px;"></iframe>
 <footer>
 © 2026 DANI FLEX WALLPAPER
 </footer>
-<script>
-const gallery = document.getElementById("gallery-container");
-
-let images = [
-"wa111.jpg","wa112.jpg","wa113.jpg","wa114.jpg","wa115.jpg",
-"wa116.jpg","wa117.jpg","wa118.jpg","wa119.jpg","wa120.jpg",
-"wa121.jpg","wa122.jpg","wa123.jpg","wa124.jpg","wa125.jpg",
-"wa126.jpg","wa127.jpg","wa128.jpg","wa129.jpg","wa130.jpg"
-];
-
-images.forEach(img=>{
-  gallery.innerHTML += `<div class="card">
-  <img src="images/${img}" loading="lazy">
-  </div>`;
-});
-</script>
-</body>
-</html>
